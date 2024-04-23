@@ -42,6 +42,17 @@ function calcularImc() {
     }
 
 }
+
+function limparForm () {
+
+    const forAltura = document.querySelector('#altura');
+    const formPeso = document.querySelector('#peso');
+
+    forAltura.value = ('');
+    formPeso.value =('');
+
+}
 form.addEventListener('submit', receberEvento);
 form.addEventListener('submit', calcularImc);
+form.addEventListener('submit' , limparForm);
 
